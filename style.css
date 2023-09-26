@@ -10,7 +10,7 @@ body{
     margin-bottom: 30px;
 }
 .main-container{
-    padding-inline: 30px;
+    padding-inline: 20px;
 }
 .search-div{
     display: flex;
@@ -20,9 +20,13 @@ body{
 }
 #action-btn{
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: .5rem;
     margin-bottom: 30px;
+}
+#action-btn button{
+    flex-grow: 1;
 }
 input{
     background-color: rgb(225, 225, 225);
@@ -39,11 +43,11 @@ button{
     background-color: black;
     color: white;
     font-size: 20px;
-    font-weight: 400;
     border: none;
     border-radius: 8px;
     height: 60px;
-    width: 200px;
+    width: fit-content;
+    width: 190px;
     cursor: pointer;
 }
 button:active{
@@ -61,5 +65,5 @@ table{
     width: 100%;
 }
 .table-container{
-    width: auto;
+    overflow-x: auto;
 }
